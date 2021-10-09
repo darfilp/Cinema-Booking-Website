@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -12,7 +12,8 @@
     <title>Document</title>
 </head>
 <body>
-    <header class="header container">
+    <header class="header">
+        <div class="navbar container">
             <a href="#" class="logo">
             <img src="img/logo.svg" alt="Logo" class="logo__img">
         </a>
@@ -42,6 +43,81 @@
             <span class="header__user--hello">Привет, Мила</span>
             <img src="img/avatar.png" alt="" class="header__user--ava">
             </div>
+        </div>
+        <section class="film container">
+            <div class="film__info">
+                <span class="film__title-small">Avengers: Infinity War</span>
+                <h1 class="film__title">Мстители: война бесконечности</h1>
+                <p class="film__desc">Пока Мстители и их союзники продолжают защищать мир от различных опасностей, с которыми не смог бы справиться один супергерой, новая угроза возникает из космоса: Танос. Межгалактический тиран преследует цель собрать все шесть Камней Бесконечности - артефакты невероятной силы, с помощью которых можно менять реальность по своему желанию. Всё, с чем Мстители сталкивались ранее, вело к этому моменту – судьба Земли никогда ещё не была столь неопределённой.</p>
+                <div class="film__details">
+                    <div class="time">
+                        <img src="img/clock.svg" alt="" class="time__icon">
+                        <span class="time__text">240 мин.</span>
+                    </div>
+                    <div class="rating">
+                        <img src="img/rating.png" alt="" class="rating__icon">
+                        <span class="rating__text"> <strong class="rating__text-count">9.2</strong>/ 10</span>
+                    </div>
+                </div>
+            </div>
+            <a href="#" class="film__trailer">
+                <svg width="100" height="100" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <circle cx="50" cy="50" r="50" fill="white"/>
+            <g clip-path="url(#clip0)">
+            <path d="M43.0758 30.0033C39.3071 27.8416 36.2518 29.6125 36.2518 33.9556V66.0059C36.2518 70.3533 39.3071 72.1219 43.0758 69.9623L71.0893 53.8967C74.8592 51.7342 74.8592 48.2306 71.0893 46.0686L43.0758 30.0033Z" fill="#F20D01"/>
+            </g>
+            <defs>
+            <clipPath id="clip0">
+            <rect width="41.8013" height="41.8013" fill="white" transform="translate(34.1837 29.0816)"/>
+            </clipPath>
+            </defs>
+            </svg>
+            </a>
+        </section>
+        <div class="session container">
+            <div class="session__date">
+                <span class="session__label">Дата</span>
+                <div class="session__date__block">
+                    <div class="session__date-item">
+                        <span class="session__month">апр</span>
+                        <span class="session__day">27</span>
+                        <span class="session__week">пт</span>
+                    </div>
+                    <div class="session__date-item">
+                        <span class="session__month">апр</span>
+                        <span class="session__day">28</span>
+                        <span class="session__week">сб</span>
+                    </div>
+                    <div class="session__date-item">
+                        <span class="session__month">апр</span>
+                        <span class="session__day">29</span>
+                        <span class="session__week">вс</span>
+                    </div>
+                    <div class="session__date-item">
+                        <span class="session__month">апр</span>
+                        <span class="session__day">30</span>
+                        <span class="session__week">пн</span>
+                    </div>
+                </div>
+            </div>
+            <div class="session__kino">
+                <span class="session__label">Кинотеатр</span>
+                <select class="session__cinema" name="cinema">
+                    <option value="ул. Куликовская, 22, стр.7">ул. Куликовская, 22, стр.7</option>
+                    <option value="ул. Автозаводский 3-й проезд, 4">ул. Автозаводский 3-й проезд, 4</option>
+                    <option value="ул. Новослободская, 31, стр.4">ул. Новослободская, 31, стр.4</option>
+                    <option value="ш. Каширское, 22, корп.3, стр.11">ш. Каширское, 22, корп.3, стр.11</option>
+                </select>
+            </div>
+            <div class="session__time">
+                <span class="session__label">Время</span>
+                <select class="session__select" name="time">
+                    <option value="23:00">23:00</option>
+                    <option value="11:05">11:05</option>
+                    <option value="15:00">15:00</option>
+                </select>
+            </div>
+        </div>
     </header>
     <script src="js/main.js"></script>
 </body>

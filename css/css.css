@@ -1,7 +1,21 @@
+* {
+    box-sizing: border-box;
+}
+
 body {
     background-color: #621402;
     font-family: 'Roboto', sans-serif;
     color: #FFFFFF;
+}
+
+.header {
+    min-height: 100vh;
+    background: linear-gradient(180deg, rgba(98, 20, 2, 0.31) 0%, #621402 85.62%),
+    url('../img/bg.jpg');
+    background-repeat: no-repeat;
+    background-position: center top;
+    background-size: cover;
+    background
 }
 
 .container {
@@ -9,11 +23,11 @@ body {
     margin: auto;
 }
 
-.header {
+.navbar {
     display: flex;
     align-items: center;
     padding-top: 30px;
-    padding-bottom: 30px;
+    padding-bottom: 99px;
 }
 
 .nav {
@@ -57,4 +71,137 @@ body {
     width: 33px;
     height: 33px;
     border-radius: 50%;
+}
+
+.film {
+    padding-bottom: 60px;
+    display: flex;
+    align-items:center;
+}
+
+.film__title-small {
+    font-size: 24px;
+    line-height: 150%;
+    color: #FFFFFF;
+    opacity: 0.5;
+    margin-bottom: 11px;
+}
+
+.film__title {
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 42px;
+    margin-bottom: 23px;
+}
+
+.film__desc {
+    font-size: 16px;
+    line-height: 150%;
+    max-width: 560px;
+}
+
+.film__trailer {
+    margin: auto;
+}
+
+.film__details {
+    display: flex;
+    align-items: center;
+    margin-top: 50px;
+}
+
+.time {
+    display: flex;
+    align-items:center;
+}
+
+.time__icon {
+    margin-right: 14px;
+}
+
+.rating {
+    display: flex;
+    align-items:center;
+    margin-left: 34px;
+}
+
+.rating__icon {
+    margin-right: 14px;
+}
+
+.rating__text-count {
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 150%;
+}
+
+.session {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding-top: 46px;
+    padding-bottom: 63px;
+    border-top: 1px solid rgba(255, 255, 255, 0.5);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+}
+
+.session__label {
+    display: block;
+    margin-bottom: 20px;
+    font-size: 16px;
+    line-height: 19px;
+}
+
+.session__month {
+    font-size: 16px;
+    line-height: 19px;
+    text-transform: uppercase;
+}
+
+.session__day {
+    font-weight: 900;
+    font-size: 30px;
+    line-height: 35px;
+}
+
+.session__week {
+    font-size: 19px;
+    line-height: 22px;
+}
+
+.session__date__block {
+    display: flex;
+}
+
+.session__date-item {
+    display: flex;
+    flex-direction: column;
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    border-radius: 5px;
+    text-align: center;
+    width: 90px;
+    height: 90px;
+    align-items:center;
+    justify-content: center;
+    margin-right: 15px;
+    transition: background-color 0.2s;
+    cursor: pointer;
+}
+
+.session__date-item:hover {
+    background-color: #FE8E05;
+    color: #621402;
+}
+
+select {
+    background: rgba(255, 255, 255, 0.15);
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    border-radius: 5px;
+    padding: 18px;
+    margin-top: 18px;
+    cursor: pointer;
+}
+
+.session__cinema {
+    min-width: 470px;
 }
