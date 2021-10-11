@@ -9,7 +9,7 @@ body {
 }
 
 .header {
-    min-height: 100vh;
+   padding-bottom: 60px;
     background: linear-gradient(180deg, rgba(98, 20, 2, 0.31) 0%, #621402 85.62%),
     url('../img/bg.jpg');
     background-repeat: no-repeat;
@@ -21,6 +21,7 @@ body {
 .container {
     max-width: 1170px;
     margin: auto;
+    width: 90%;
 }
 
 .navbar {
@@ -31,7 +32,7 @@ body {
 }
 
 .nav {
-    display: flex;
+    position: relative;
 }
 
 .logo {
@@ -203,13 +204,18 @@ select {
 }
 
 .session__cinema {
-    min-width: 470px;
+    width: 470px;
 }
 
 .scheme {
     margin-bottom: 40px;
     background: rgba(36, 36, 36, 0.18);
     border-radius: 10px;
+    /*overflow-x: auto; для прокрутки*/
+}
+
+.scheme__svg { 
+    max-width: 1170px;
 }
 
 .scheme path:not(.light) {
@@ -236,6 +242,7 @@ select {
     align-items: center;
     border-top: 1px solid rgba(255, 255, 255, 0.5);
     max-width: 1024px;
+    width: 90%;
     margin: auto;
     padding-top: 22px;
     padding-bottom: 38px;
@@ -285,4 +292,83 @@ select {
     font-size: 18px;
     line-height: 21px;
     padding: 24px 52px;
+}
+
+.nav__button {
+    display: none;
+}
+
+@media (max-width: 1200px) {
+    .container {
+        max-width: 960px;
+    }
+    .session__cinema {
+        width: 100%;
+    }
+}
+
+@media (max-width: 992px) {
+    .container {
+        max-width: 750px;
+    }
+    .session {
+        flex-wrap: wrap;
+    }
+    .session__date {
+        flex-basis: 70%;
+        margin-top: 40px;
+    }
+    .session__time {
+        order: 2;
+    }
+    .session__kino {
+        
+        order: 3;
+    }
+    .menu-item {
+        margin-right: 20px;
+    }
+}
+
+@media (max-width: 768px) {
+    .container {
+        max-width: 560px;
+    }
+    .menu {
+        position: absolute;
+        left: 0;
+        top: 20px;
+        margin-left: 0;
+        flex-direction: column;
+        background-color: #621402;
+        border-radius: 10px;
+        z-index: 99;
+        display: none;
+    }
+    .menu-item {
+        margin-bottom: 10px;
+    }
+    .nav__button {
+      display: block;
+      background-color: transparent;
+      border: none;
+      width: 40px;
+      height: 40px;
+      cursor: pointer;
+      margin-left: -40px;
+    }
+    .is-open {
+        display: block !important;
+    }
+    .film__desc {
+        margin-right: 30px;
+    }
+    .film {
+        flex-direction: column;
+    }
+    .film__trailer{
+        margin-right: auto;
+        margin-left: 0;
+        margin-top: 40px;
+    }
 }
